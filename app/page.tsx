@@ -398,16 +398,14 @@ export default function HomePage() {
             }
             className="flex items-center gap-2"
           >
-            <span className="relative inline-flex h-9 w-9 items-center justify-center overflow-hidden rounded-full bg-slate-950/80 ring-1 ring-cyan-400/60 shadow-soft">
-              <Image
-                src="/novasite-logo.png"
-                alt="Logo NovaSite"
-                fill
-                sizes="36px"
-                className="object-contain"
-                priority
-              />
-            </span>
+            <Image
+              src="/novasite-logo.png"
+              alt="Logo NovaSite"
+              width={36}
+              height={36}
+              className="rounded-full ring-2 ring-cyan-400/70 shadow-soft"
+              priority
+            />
             <span className="flex flex-col text-left">
               <span className="text-[13px] font-semibold text-slate-50">
                 NovaSite Studio
