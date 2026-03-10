@@ -28,6 +28,9 @@ export const metadata: Metadata = {
     title: "NovaSite Studio - Création de sites web modernes",
     description:
       "Sites vitrines et e-commerce modernes, rapides et pensés pour convertir vos visiteurs en clients."
+  },
+  icons: {
+    icon: "/novasite-logo.png"
   }
 };
 

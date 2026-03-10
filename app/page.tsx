@@ -207,7 +207,7 @@ const communicationOptions = [
 ] as const;
 
 const designOptions = [
-  { id: "identite", label: "Identité visuelle complète", price: 150 },
+  { id: "identite", label: "Identité visuelle complète", price: 200 },
   {
     id: "photo-profil",
     label: "Photo profil + couverture réseaux",
@@ -398,8 +398,15 @@ export default function HomePage() {
             }
             className="flex items-center gap-2"
           >
-            <span className="inline-flex h-8 w-8 items-center justify-center rounded-2xl bg-gradient-to-br from-indigo-500 via-purple-500 to-sky-400 text-xs font-semibold text-slate-950 shadow-soft">
-              NS
+            <span className="relative inline-flex h-9 w-9 items-center justify-center overflow-hidden rounded-full bg-slate-950/80 ring-1 ring-cyan-400/60 shadow-soft">
+              <Image
+                src="/novasite-logo.png"
+                alt="Logo NovaSite"
+                fill
+                sizes="36px"
+                className="object-contain"
+                priority
+              />
             </span>
             <span className="flex flex-col text-left">
               <span className="text-[13px] font-semibold text-slate-50">
